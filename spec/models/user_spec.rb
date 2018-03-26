@@ -4,6 +4,6 @@ require "rails_helper"
 
 describe 'User' do
   it 'is valid with valid attributes' do
-    expect(User.new(username: "bobcobb")).to be_valid
+    expect(User.new(username: "bobcobb", email: "bobcobb@net.com")).to be_valid
   end
 end
