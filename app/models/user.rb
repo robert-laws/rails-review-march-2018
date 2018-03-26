@@ -4,6 +4,6 @@ class User < ApplicationRecord
   validates :email, presence: true
 
   def user_created
-    current_user.present?
+    self.id.present?
   end
 end

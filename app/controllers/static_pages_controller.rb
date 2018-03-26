@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @user = current_user if current_user
     @welcome = "Hello there!"
   end
 
